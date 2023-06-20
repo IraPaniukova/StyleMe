@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StyleMe" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#2f2f2f</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/customActivityAnimation</item>
+
+    </style>
+
+
+    <style name="MainCardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:elevation">30dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="CardImageStyle">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="CardTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/arapey</item>
+        <!--I have chosen this font because it is similar to the font high fashion clothes brands use-->
+        <item name="android:textColor">#2f2f2f</item>
+        <item name="android:textAllCaps">true</item>
+
+     <!--  <item name="android:textColor">@color/card_text</item> -->
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="TextForList">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#757575</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+        <style name="customActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@transition/slide_in_right</item>
+       <item name="android:activityOpenExitAnimation">@transition/slide_out_left</item>
+       <item name="android:activityCloseEnterAnimation">@transition/slide_in_left</item>
+       <item name="android:activityCloseExitAnimation">@transition/slide_out_right</item>
+
+</style>
+</resources>
